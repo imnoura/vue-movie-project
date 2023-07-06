@@ -1,4 +1,8 @@
-<script></script>
+<script setup>
+function changeTheme() {
+  document.body.classList.toggle("dark");
+}
+</script>
 
 <template>
   <div class="w-full h-12 bg-white dark:bg-black flex justify-between items-center px-[50px] text-black">
@@ -32,7 +36,7 @@
       <div class="w-[40px] h-[20px] bg-black dark:bg-white rounded-[30px] flex items-center justify-around relative">
         <i class="fa-solid fa-moon toggle-icon"></i>
         <i class="fa-solid fa-lightbulb toggle-icon"></i>
-        <div class="toggle-ball"></div>
+        <div class="toggle-ball" @click="changeTheme()"></div>
       </div>
     </div>
   </div>
