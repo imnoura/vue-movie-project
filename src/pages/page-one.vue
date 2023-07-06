@@ -26,7 +26,7 @@
         </div>
         <div class="mr-5 text-black dark:text-white">
           <span>Profile</span>
-          <i class="fa-solid fa-caret-down cursor-pointer"></i>
+          <i class="fa-solid fa-caret-down cursor-pointer ml-2"></i>
         </div>
       </div>
       <div class="w-[40px] h-[20px] bg-black dark:bg-white rounded-[30px] flex items-center justify-around relative">
@@ -145,8 +145,8 @@
         </button>
       </div>
 
-      <div class="px-5 py-0">
-        <h1 class="font-poppins text-black dark:text-white font-semibold text-2xl mb-2 mt-10">CONTINUE WATCHING</h1>
+      <div class="px-5 pb-12 pt-6">
+        <h1 class="font-poppins text-black dark:text-white font-semibold text-2xl mb-2 mt-8">CONTINUE WATCHING</h1>
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
