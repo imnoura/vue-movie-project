@@ -181,6 +181,22 @@
 <script setup>
 import movieCategory from "../components/movieCategory.vue";
 import movieCard from "../components/movieCard.vue";
+import image1 from "../assets/images/01.jpg";
+import image2 from "../assets/images/02.jpg";
+import image3 from "../assets/images/03.jpg";
+import image3 from "../assets/images/04.jpg";
+import image3 from "../assets/images/05.jpg";
+import image3 from "../assets/images/06.jpg";
+import image3 from "../assets/images/07.jpg";
+import image3 from "../assets/images/08.jpg";
+import image3 from "../assets/images/09.jpg";
+import image3 from "../assets/images/10.jpg";
+import image3 from "../assets/images/11.jpg";
+import image3 from "../assets/images/12.jpg";
+import image3 from "../assets/images/f-1.jpg";
+import image3 from "../assets/images/f-2.jpg";
+import image3 from "../assets/images/logo.png";
+import image3 from "../assets/images/profile.png";
 
 function changeTheme() {
   document.body.classList.toggle("dark");
