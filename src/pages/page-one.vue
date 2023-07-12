@@ -1,9 +1,3 @@
-<script setup>
-function changeTheme() {
-  document.body.classList.toggle("dark");
-}
-</script>
-
 <template>
   <div class="w-full h-12 bg-white dark:bg-black flex justify-between items-center px-[50px] text-black">
     <div class="flex">
@@ -70,7 +64,7 @@ function changeTheme() {
       </div>
 
       <div class="px-5 py-0">
-        <h1 class="font-poppins text-black dark:text-white font-semibold text-2xl mb-2 mt-10">NEW RELEASES</h1>
+        <movieCategory v-bind:title="'NEW RELEASE'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
@@ -102,7 +96,7 @@ function changeTheme() {
       </div>
 
       <div class="px-5 py-0 mb-5">
-        <h1 class="font-poppins text-black dark:text-white font-semibold text-2xl mb-2 mt-6">TRENDING NOW</h1>
+        <movieCategory v-bind:title="'TRENDING NOW'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
@@ -150,7 +144,7 @@ function changeTheme() {
       </div>
 
       <div class="px-5 pb-12 pt-6">
-        <h1 class="font-poppins text-black dark:text-white font-semibold text-2xl mb-2 mt-8">CONTINUE WATCHING</h1>
+        <movieCategory v-bind:title="'CONTINUE WATCHING'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
@@ -183,6 +177,14 @@ function changeTheme() {
     </div>
   </div>
 </template>
+
+<script setup>
+import movieCategory from "../components/movieCategory.vue";
+
+function changeTheme() {
+  document.body.classList.toggle("dark");
+}
+</script>
 
 <style scoped>
 li {
