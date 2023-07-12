@@ -67,30 +67,10 @@
         <movieCategory title="NEW RELEASE" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
-            <div class="movie-list-item">
-              <img src="../assets/images/01.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/02.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/03.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/04.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
+            <movieCard :image="image01" />
+            <movieCard :image="image02" />
+            <movieCard :image="image03" />
+            <movieCard :image="image04" />
           </div>
         </div>
       </div>
@@ -99,30 +79,10 @@
         <movieCategory title="TRENDING NOW" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
-            <div class="movie-list-item">
-              <img src="../assets/images/05.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/06.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/07.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/08.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
+            <movieCard :image="image05" />
+            <movieCard :image="image06" />
+            <movieCard :image="image07" />
+            <movieCard :image="image08" />
           </div>
         </div>
       </div>
@@ -147,30 +107,10 @@
         <movieCategory title="CONTINUE WATCHING" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
-            <div class="movie-list-item">
-              <img src="../assets/images/09.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/10.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/11.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
-            <div class="movie-list-item">
-              <img src="../assets/images/12.jpg" class="movie-list-item-img" />
-              <span class="movie-list-item-title">Netflix Original</span>
-              <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-              <button class="movie-list-item-button">Watch Now</button>
-            </div>
+            <movieCard :image="image09" />
+            <movieCard :image="image10" />
+            <movieCard :image="image11" />
+            <movieCard :image="image12" />
           </div>
         </div>
       </div>
@@ -181,22 +121,18 @@
 <script setup>
 import movieCategory from "../components/movieCategory.vue";
 import movieCard from "../components/movieCard.vue";
-import image1 from "../assets/images/01.jpg";
-import image2 from "../assets/images/02.jpg";
-import image3 from "../assets/images/03.jpg";
-import image3 from "../assets/images/04.jpg";
-import image3 from "../assets/images/05.jpg";
-import image3 from "../assets/images/06.jpg";
-import image3 from "../assets/images/07.jpg";
-import image3 from "../assets/images/08.jpg";
-import image3 from "../assets/images/09.jpg";
-import image3 from "../assets/images/10.jpg";
-import image3 from "../assets/images/11.jpg";
-import image3 from "../assets/images/12.jpg";
-import image3 from "../assets/images/f-1.jpg";
-import image3 from "../assets/images/f-2.jpg";
-import image3 from "../assets/images/logo.png";
-import image3 from "../assets/images/profile.png";
+import image01 from "../assets/images/01.jpg";
+import image02 from "../assets/images/02.jpg";
+import image03 from "../assets/images/03.jpg";
+import image04 from "../assets/images/04.jpg";
+import image05 from "../assets/images/05.jpg";
+import image06 from "../assets/images/06.jpg";
+import image07 from "../assets/images/07.jpg";
+import image08 from "../assets/images/08.jpg";
+import image09 from "../assets/images/09.jpg";
+import image10 from "../assets/images/10.jpg";
+import image11 from "../assets/images/11.jpg";
+import image12 from "../assets/images/12.jpg";
 
 function changeTheme() {
   document.body.classList.toggle("dark");
