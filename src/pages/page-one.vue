@@ -64,7 +64,7 @@
       </div>
 
       <div class="px-5 py-0">
-        <movieCategory v-bind:title="'NEW RELEASE'" />
+        <movieCategory :title="'NEW RELEASE'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
@@ -96,7 +96,7 @@
       </div>
 
       <div class="px-5 py-0 mb-5">
-        <movieCategory v-bind:title="'TRENDING NOW'" />
+        <movieCategory :title="'TRENDING NOW'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
@@ -144,7 +144,7 @@
       </div>
 
       <div class="px-5 pb-12 pt-6">
-        <movieCategory v-bind:title="'CONTINUE WATCHING'" />
+        <movieCategory :title="'CONTINUE WATCHING'" />
         <div class="movie-list-wrapper">
           <div class="flex items-center h-[250px]">
             <div class="movie-list-item">
