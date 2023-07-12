@@ -180,6 +180,7 @@
 
 <script setup>
 import movieCategory from "../components/movieCategory.vue";
+import movieCard from "../components/movieCard.vue";
 
 function changeTheme() {
   document.body.classList.toggle("dark");
