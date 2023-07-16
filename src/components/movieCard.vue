@@ -3,11 +3,13 @@
     <img class="movie-list-item-img" :src="image" />
     <span class="movie-list-item-title">Netflix Original</span>
     <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-    <button class="movie-list-item-button">Watch Now</button>
+    <MyButton class="my-button" :is-large="false" title="Watch Now" />
   </div>
 </template>
 
 <script setup>
+import MyButton from "./MyButton.vue";
+
 defineProps({
   image: String,
 });
@@ -27,7 +29,7 @@ defineProps({
 }
 .movie-list-item:hover .movie-list-item-title,
 .movie-list-item:hover .movie-list-item-desc,
-.movie-list-item:hover .movie-list-item-button {
+.movie-list-item:hover .my-button {
   opacity: 1;
 }
 .movie-list-item-title {
@@ -35,8 +37,5 @@ defineProps({
 }
 .movie-list-item-desc {
   @apply bg-[#151515] p-[12px] text-white text-sm absolute top-[32%] left-6 w-[250px] rounded-md cursor-pointer opacity-0 transition-all duration-500 hover:scale-75;
-}
-.movie-list-item-button {
-  @apply px-2.5 py-2 bg-[#c70913] text-white cursor-pointer rounded-md outline-none border-none text-sm font-medium absolute bottom-[18%] left-6 opacity-0 transition-all duration-500 ease-in-out hover:scale-75;
 }
 </style>
