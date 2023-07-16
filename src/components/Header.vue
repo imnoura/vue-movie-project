@@ -27,10 +27,13 @@
           <i class="fa-solid fa-caret-down cursor-pointer ml-2"></i>
         </div>
       </div>
-      <div class="w-[40px] h-[20px] bg-black dark:bg-white rounded-[30px] flex items-center justify-around relative">
+      <div
+        class="w-[40px] h-[20px] bg-black dark:bg-white rounded-[30px] flex items-center justify-around relative cursor-pointer"
+        @click="changeTheme()"
+      >
         <i class="fa-solid fa-moon toggle-icon"></i>
         <i class="fa-solid fa-lightbulb toggle-icon"></i>
-        <div class="toggle-ball" @click="changeTheme()"></div>
+        <div class="toggle-ball"></div>
       </div>
     </div>
   </div>
