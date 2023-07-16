@@ -1,15 +1,7 @@
 <template>
   <Header />
   <div class="flex">
-    <div class="w-[50px] h-full bg-white dark:bg-black fixed top-0 items-center flex-col pt-[60px] flex">
-      <i class="left-menu-icon fas fa-search"></i>
-      <i class="left-menu-icon fas fa-home"></i>
-      <i class="left-menu-icon fas fa-users"></i>
-      <i class="left-menu-icon fas fa-bookmark"></i>
-      <i class="left-menu-icon fas fa-tv"></i>
-      <i class="left-menu-icon fas fa-hourglass-start"></i>
-      <i class="left-menu-icon fas fa-shopping-cart"></i>
-    </div>
+    <Sidebar />
 
     <div class="bg-white dark:bg-black w-full ml-[50px]">
       <SectionWrapper
@@ -82,22 +74,10 @@ import image11 from "../assets/images/11.jpg";
 import image12 from "../assets/images/12.jpg";
 import SectionWrapper from "../components/SectionWrapper.vue";
 import Header from "../components/Header.vue";
+import Sidebar from "../components/Sidebar.vue";
 </script>
 
 <style scoped>
-li {
-  @apply text-black dark:text-white m-8 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
-}
-.toggle-icon {
-  color: #daa520;
-  font-size: 13px;
-}
-.toggle-ball {
-  @apply w-[18px] h-[18px] bg-white dark:bg-black absolute right-[1px] rounded-[50%] cursor-pointer;
-}
-.left-menu-icon {
-  @apply text-black dark:text-white text-xl mb-10 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
-}
 .movie-list-wrapper {
   @apply relative overflow-hidden -mb-5;
 }
