@@ -136,38 +136,8 @@ li {
 .left-menu-icon {
   @apply text-black dark:text-white text-xl mb-10 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
 }
-.featured-content {
-  @apply h-[92vh] flex flex-col items-center justify-center;
-}
 .movie-list-wrapper {
   @apply relative overflow-hidden -mb-5;
-}
-.movie-list-item {
-  @apply mr-[20px] relative;
-}
-
-.container.active {
-  background-color: white;
-}
-.movie-list-title.active {
-  color: #151515;
-}
-.navbar-container.active {
-  background-color: #fff;
-  color: #151515;
-}
-.toggle.active {
-  background-color: #151515;
-}
-.toggle-ball.active {
-  background-color: #fff;
-  transform: translateX(-20px);
-}
-.sidebar.active {
-  background-color: #fff;
-}
-.left-menu-icon.active {
-  color: #151515;
 }
 
 @media screen and (max-width: 600px) {
