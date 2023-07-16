@@ -1,9 +1,9 @@
 <template>
   <Header />
   <div class="flex">
-    <Sidebar />
+    <Sidebar class="hidden sm:block" />
 
-    <div class="bg-white dark:bg-black w-full ml-[50px]">
+    <div class="bg-white dark:bg-black w-full sm:ml-[50px]">
       <SectionWrapper
         text="Unlimited movies, TV shows and more."
         sub-text="Watch anywhere. Cancel anytime."
@@ -14,7 +14,7 @@
       <div class="px-5 py-0">
         <movieCategory title="NEW RELEASE" />
         <div class="movie-list-wrapper">
-          <div class="flex items-center h-[250px]">
+          <div class="sm:flex sm:flex-row flex flex-col items-center sm:h-[250px]">
             <movieCard :image="image01" />
             <movieCard :image="image02" />
             <movieCard :image="image03" />
@@ -26,7 +26,7 @@
       <div class="px-5 py-0 mb-5">
         <movieCategory title="TRENDING NOW" />
         <div class="movie-list-wrapper">
-          <div class="flex items-center h-[250px]">
+          <div class="sm:flex sm:flex-row flex flex-col items-center sm:h-[250px]">
             <movieCard :image="image05" />
             <movieCard :image="image06" />
             <movieCard :image="image07" />
@@ -45,7 +45,7 @@
       <div class="px-5 pb-12 pt-6">
         <movieCategory title="CONTINUE WATCHING" />
         <div class="movie-list-wrapper">
-          <div class="flex items-center h-[250px]">
+          <div class="sm:flex sm:flex-row flex flex-col items-center sm:h-[250px]">
             <movieCard :image="image09" />
             <movieCard :image="image10" />
             <movieCard :image="image11" />
@@ -103,10 +103,6 @@ import Sidebar from "../components/Sidebar.vue";
   }
   .fa-solid.fa-caret-down {
     display: none;
-  }
-  .logo {
-    width: 80px;
-    height: 25px;
   }
   .container {
     min-height: calc(450vh - 50px);

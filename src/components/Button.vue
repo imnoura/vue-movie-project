@@ -15,6 +15,6 @@ defineProps({
 }
 
 .large-button {
-  @apply bg-[#f40612] text-white text-xl rounded-xl px-8 py-4 border-none outline-none mt-6 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
+  @apply bg-[#f40612] text-white text-sm sm:text-xl rounded-xl px-4 sm:px-8 py-2 sm:py-4 border-none outline-none mt-6 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
 }
 </style>

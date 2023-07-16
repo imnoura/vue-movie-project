@@ -4,7 +4,7 @@
       <div class="grid items-center">
         <img src="../assets/images/logo.png" class="w-[100px] h-[30px] cursor-pointer" />
       </div>
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center sm:block hidden">
         <ul class="flex list-none">
           <li class="font-bold">Home</li>
           <li>Movies</li>
@@ -19,10 +19,10 @@
         <div>
           <img
             src="../assets/images/profile.png"
-            class="w-[35px] h-[35px] rounded-xl transition-all duration-300 ease-in-out hover:scale-75 cursor-pointer"
+            class="w-[35px] h-[35px] rounded-xl transition-all duration-300 ease-in-out hover:scale-75 cursor-pointer sm:block hidden"
           />
         </div>
-        <div class="mr-5 text-black dark:text-white">
+        <div class="mr-5 text-black dark:text-white sm:block hidden">
           <span>Profile</span>
           <i class="fa-solid fa-caret-down cursor-pointer ml-2"></i>
         </div>

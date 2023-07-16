@@ -6,8 +6,8 @@
       backgroundSize: 'cover',
     }"
   >
-    <h1 class="font-poppins w-[500px] text-center font-bold text-white text-5xl">{{ text }}</h1>
-    <p class="font-poppins text-center text-white text-2xl mt-[25px]">
+    <h1 class="font-poppins sm:w-[500px] text-center font-bold text-white text-3xl sm:text-5xl">{{ text }}</h1>
+    <p class="font-poppins text-center text-white text-xl sm:text-2xl mt-[25px]">
       {{ subText }}
     </p>
     <Button :title="buttonText" :isLarge="true" />

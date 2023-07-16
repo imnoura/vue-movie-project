@@ -20,7 +20,7 @@ defineProps({
   @apply mr-[20px] relative;
 }
 .movie-list-item-img {
-  @apply w-[300px] h-[200px] object-cover rounded-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
+  @apply sm:w-[300px] sm:h-[200px] object-cover rounded-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
 }
 .movie-list-item:hover .movie-list-item-img {
   transform: scale(0.9);
