@@ -1,7 +1,7 @@
 <template>
   <Header />
   <div class="flex">
-    <Sidebar class="hidden sm:block" />
+    <Sidebar class="hidden sm:flex" />
 
     <div class="bg-white dark:bg-black w-full sm:ml-[50px]">
       <SectionWrapper
@@ -80,77 +80,5 @@ import Sidebar from "../components/Sidebar.vue";
 <style scoped>
 .movie-list-wrapper {
   @apply relative overflow-hidden -mb-5;
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar {
-    display: none;
-  }
-  .sidebar.active {
-    display: none;
-  }
-  .menu-list {
-    display: none;
-  }
-  .navbar-container {
-    padding: 0 15px;
-  }
-  .profile-picture {
-    display: none;
-  }
-  .profile-text {
-    display: none;
-  }
-  .fa-solid.fa-caret-down {
-    display: none;
-  }
-  .container {
-    min-height: calc(450vh - 50px);
-  }
-  .content-container {
-    margin-left: 0px;
-  }
-  .featured-content {
-    height: 50vh;
-  }
-  .featured-content:nth-last-child(2) {
-    height: 50vh;
-  }
-  .featured-title {
-    width: 300px;
-    line-height: 1.2;
-    font-size: 25px;
-    text-align: center;
-  }
-  .featured-desc {
-    font-size: 20px;
-  }
-  .featured-button {
-    font-size: 15px;
-    padding: 12px 20px;
-  }
-  .movie-list-container {
-    padding: 0 15px;
-  }
-  .movie-list-title {
-    font-size: 22px;
-    margin-bottom: 0px;
-  }
-  .movie-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 130vh;
-  }
-  .movie-list-item {
-    margin-right: 0px;
-  }
-  .movie-list-item-img {
-    margin: 10px;
-    width: 360px;
-    height: 200px;
-    border-radius: 15px;
-  }
 }
 </style>
