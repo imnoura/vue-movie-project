@@ -47,21 +47,12 @@
     </div>
 
     <div class="bg-white dark:bg-black w-full ml-[50px]">
-      <div
-        class="featured-content"
-        style="
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url(../src/assets/images/f-1.jpg);
-          background-size: cover;
-        "
-      >
-        <h1 class="font-poppins w-[500px] text-center font-bold text-white text-5xl">Unlimited movies, TV shows and more.</h1>
-        <p class="font-poppins text-center text-white text-2xl mt-[25px]">Watch anywhere. Cancel anytime.</p>
-        <button
-          class="bg-[#f40612] text-white text-xl rounded-xl px-8 py-4 border-none outline-none mt-6 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75"
-        >
-          GET STARTED
-        </button>
-      </div>
+      <SectionWrapper
+        text="Unlimited movies, TV shows and more."
+        sub-text="Watch anywhere. Cancel anytime."
+        button-text="GET STARTED"
+        :is-top-image="true"
+      />
 
       <div class="px-5 py-0">
         <movieCategory title="NEW RELEASE" />
@@ -87,21 +78,12 @@
         </div>
       </div>
 
-      <div
-        class="featured-content"
-        style="
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url(../src/assets/images/f-2.jpg);
-          background-size: cover;
-        "
-      >
-        <h1 class="font-poppins w-[500px] text-center font-bold text-white text-5xl">Download your shows to watch offline.</h1>
-        <p class="font-poppins text-center text-white text-2xl mt-[25px]">Save your favourites easily to watch.</p>
-        <button
-          class="bg-[#f40612] text-white text-xl rounded-xl px-8 py-4 border-none outline-none mt-6 cursor-pointer transition-all duration-300 ease-in-out hover:scale-75"
-        >
-          BINGE WATCH <i class="fa-solid fa-angle-right btn-icon"></i>
-        </button>
-      </div>
+      <SectionWrapper
+        text="Download your shows to watch offline."
+        sub-text="Save your favourites easily to watch"
+        button-text="BINGE WATCH"
+        :is-top-image="false"
+      />
 
       <div class="px-5 pb-12 pt-6">
         <movieCategory title="CONTINUE WATCHING" />
@@ -133,6 +115,7 @@ import image09 from "../assets/images/09.jpg";
 import image10 from "../assets/images/10.jpg";
 import image11 from "../assets/images/11.jpg";
 import image12 from "../assets/images/12.jpg";
+import SectionWrapper from "../components/SectionWrapper.vue";
 
 function changeTheme() {
   document.body.classList.toggle("dark");
