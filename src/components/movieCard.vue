@@ -3,12 +3,12 @@
     <img class="movie-list-item-img" :src="image" />
     <span class="movie-list-item-title">Netflix Original</span>
     <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-    <MyButton class="my-button" :is-large="false" title="Watch Now" />
+    <Button class="btn" :is-large="false" title="Watch Now" />
   </div>
 </template>
 
 <script setup>
-import MyButton from "./MyButton.vue";
+import Button from "./Button.vue";
 
 defineProps({
   image: String,
@@ -29,7 +29,7 @@ defineProps({
 }
 .movie-list-item:hover .movie-list-item-title,
 .movie-list-item:hover .movie-list-item-desc,
-.movie-list-item:hover .my-button {
+.movie-list-item:hover .btn {
   opacity: 1;
 }
 .movie-list-item-title {
