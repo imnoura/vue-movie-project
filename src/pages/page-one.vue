@@ -1,40 +1,5 @@
 <template>
-  <div class="w-full h-12 bg-white dark:bg-black flex justify-between items-center px-[50px] text-black">
-    <div class="flex">
-      <div class="grid items-center">
-        <img src="../assets/images/logo.png" class="w-[100px] h-[30px] cursor-pointer" />
-      </div>
-      <div class="flex flex-row items-center">
-        <ul class="flex list-none">
-          <li class="font-bold">Home</li>
-          <li>Movies</li>
-          <li>Series</li>
-          <li>Popular</li>
-          <li>Trends</li>
-        </ul>
-      </div>
-    </div>
-    <div class="flex items-center justify-end">
-      <div class="flex justify-center items-center gap-4">
-        <div>
-          <img
-            src="../assets/images/profile.png"
-            class="w-[35px] h-[35px] rounded-xl transition-all duration-300 ease-in-out hover:scale-75 cursor-pointer"
-          />
-        </div>
-        <div class="mr-5 text-black dark:text-white">
-          <span>Profile</span>
-          <i class="fa-solid fa-caret-down cursor-pointer ml-2"></i>
-        </div>
-      </div>
-      <div class="w-[40px] h-[20px] bg-black dark:bg-white rounded-[30px] flex items-center justify-around relative">
-        <i class="fa-solid fa-moon toggle-icon"></i>
-        <i class="fa-solid fa-lightbulb toggle-icon"></i>
-        <div class="toggle-ball" @click="changeTheme()"></div>
-      </div>
-    </div>
-  </div>
-
+  <Header />
   <div class="flex">
     <div class="w-[50px] h-full bg-white dark:bg-black fixed top-0 items-center flex-col pt-[60px] flex">
       <i class="left-menu-icon fas fa-search"></i>
@@ -116,10 +81,7 @@ import image10 from "../assets/images/10.jpg";
 import image11 from "../assets/images/11.jpg";
 import image12 from "../assets/images/12.jpg";
 import SectionWrapper from "../components/SectionWrapper.vue";
-
-function changeTheme() {
-  document.body.classList.toggle("dark");
-}
+import Header from "../components/Header.vue";
 </script>
 
 <style scoped>
