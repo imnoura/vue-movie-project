@@ -4,13 +4,7 @@
     <movieBackground />
   </div>
   <navbar />
-  <section class="mb-7 mt-20 mx-14">
-    <div class="gradient-line"></div>
-    <div class="text-gray-400 text-base my-6 text-center">
-      Chloë Grace Moretz and Riz Ahmed lend their voices to this epic comedy adventure based on the bestselling graphic novel.
-    </div>
-    <div class="gradient-line"></div>
-  </section>
+  <navDescription />
   <section class="mx-14 mt-20 mb-3 flex justify-start">
     <div>
       <h2 class="text-white text-3xl inline-block">Videos</h2>
@@ -227,6 +221,7 @@
 import Header from "../components/page-2/Header.vue";
 import movieBackground from "../components/page-2/MovieBackground.vue";
 import navbar from "../components/page-2/Navbar.vue";
+import navDescription from "../components/page-2/NavDescription.vue";
 import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import movieCard from "../components/page-2/MovieCard.vue";
 import image03 from "../assets/page-2-images/03.jpg";
@@ -243,12 +238,6 @@ import image10 from "../assets/page-2-images/10.jpg";
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-.gradient-line {
-  background: linear-gradient(90deg, #777 0, rgba(51, 51, 51, 0.5) 50%, #777);
-  height: 1px;
-  margin-bottom: 25px;
 }
 
 .horizontal-item-container {
