@@ -249,8 +249,4 @@ import SubTitle from "../components/page-2/SubTitle.vue";
 .link-items {
   @apply hover:underline cursor-pointer;
 }
-
-.footer-items {
-  @apply box-border inline-block mb-4 min-w-[100px] align-top w-[25%];
-}
 </style>

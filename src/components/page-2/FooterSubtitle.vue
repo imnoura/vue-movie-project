@@ -8,4 +8,8 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer-items {
+  @apply box-border inline-block mb-4 min-w-[100px] align-top w-[25%];
+}
+</style>
