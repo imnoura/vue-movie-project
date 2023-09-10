@@ -7,10 +7,9 @@
       <div class="flex flex-row items-center sm:block hidden">
         <ul class="flex list-none">
           <li class="font-bold">Home</li>
-          <li>Movies</li>
-          <li>Series</li>
-          <li>Popular</li>
-          <li>Trends</li>
+          <li><a href="https://www.netflix.com/browse/genre/34399">Movies</a></li>
+          <li><a href="https://www.netflix.com/browse/genre/83">Series</a></li>
+          <li><a href="https://www.netflix.com/tudum/top10/">Top 10</a></li>
         </ul>
       </div>
     </div>
