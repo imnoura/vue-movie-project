@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-6 bg-black fixed z-30 flex justify-between items-center p-8 text-white top-0">
     <div class="grid items-center">
-      <img src="../assets/page-2-images/logo.png" class="w-28 h-10 cursor-pointer" />
+      <img src="../../assets/page-2-images/logo.png" class="w-28 h-10 cursor-pointer" />
     </div>
     <div class="flex items-center justify-end text-sm">
       <div class="mr-2 text-white">
