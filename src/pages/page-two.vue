@@ -176,7 +176,6 @@
     <div class="text-gray-500 pt-8">
       <p class="link-items mb-8">Questions? Contact us.</p>
       <ul class="text-[13px]">
-        <li class="link-items footer-items">FAQ</li>
         <footerSubtitle title="Cancel Membership" />
         <footerSubtitle title="Help Center" />
         <footerSubtitle title="Account" />
