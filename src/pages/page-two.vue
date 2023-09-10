@@ -1,5 +1,5 @@
 <template>
-  <header />
+  <Header />
   <div class="mx-14 mt-10">
     <section class="image-wrapper">
       <div class="left-side-wrapper">
@@ -262,7 +262,7 @@
 </template>
 
 <script setup>
-import header from "../components/page-2/Header.vue";
+import Header from "../components/page-2/Header.vue";
 import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import movieCard from "../components/page-2/MovieCard.vue";
 import image03 from "../assets/page-2-images/03.jpg";
