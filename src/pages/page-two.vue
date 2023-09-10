@@ -57,10 +57,10 @@
   </section>
   <div class="text-white text-base mx-14 relative">
     <ul class="my-4 mx-0 flex justify-center">
-      <MovieCard :image="image03" />
-      <MovieCard :image="image04" />
-      <MovieCard :image="image05" />
-      <MovieCard :image="image06" />
+      <movieCard :image="image03" />
+      <movieCard :image="image04" />
+      <movieCard :image="image05" />
+      <movieCard :image="image06" />
     </ul>
   </div>
   <section class="mx-14 py-6 leading-5">
@@ -138,10 +138,10 @@
       <h2 class="text-white text-3xl">More Like This</h2>
     </div>
     <div class="my-4 mx-0 flex w-full justify-center">
-      <MovieCard :image="image07" />
-      <MovieCard :image="image08" />
-      <MovieCard :image="image09" />
-      <MovieCard :image="image10" />
+      <movieCard :image="image07" />
+      <movieCard :image="image08" />
+      <movieCard :image="image09" />
+      <movieCard :image="image10" />
     </div>
   </section>
   <section class="mx-14 py-6 leading-5">
@@ -225,25 +225,25 @@
       <p class="link-items mb-8">Questions? Contact us.</p>
       <ul class="text-[13px]">
         <li class="link-items footer-items">FAQ</li>
-        <FooterSubtitle title="Cancel Membership" />
-        <FooterSubtitle title="Help Center" />
-        <FooterSubtitle title="Account" />
-        <FooterSubtitle title="Media Center" />
-        <FooterSubtitle title="Investor Relations" />
-        <FooterSubtitle title="Jobs" />
-        <FooterSubtitle title="Netflix Shop" />
-        <FooterSubtitle title="Redeem Gift Cards" />
-        <FooterSubtitle title="Buy Gift Cards" />
-        <FooterSubtitle title="Ways to Watch" />
-        <FooterSubtitle title="Terms of Use" />
-        <FooterSubtitle title="Privacy" />
-        <FooterSubtitle title="Cookie Preferences" />
-        <FooterSubtitle title="Impressum" />
-        <FooterSubtitle title="Contact Us" />
-        <FooterSubtitle title="Speed Test" />
-        <FooterSubtitle title="Legal Guarantee" />
-        <FooterSubtitle title="Legal Notices" />
-        <FooterSubtitle title="Only on Netflix" />
+        <footerSubtitle title="Cancel Membership" />
+        <footerSubtitle title="Help Center" />
+        <footerSubtitle title="Account" />
+        <footerSubtitle title="Media Center" />
+        <footerSubtitle title="Investor Relations" />
+        <footerSubtitle title="Jobs" />
+        <footerSubtitle title="Netflix Shop" />
+        <footerSubtitle title="Redeem Gift Cards" />
+        <footerSubtitle title="Buy Gift Cards" />
+        <footerSubtitle title="Ways to Watch" />
+        <footerSubtitle title="Terms of Use" />
+        <footerSubtitle title="Privacy" />
+        <footerSubtitle title="Cookie Preferences" />
+        <footerSubtitle title="Impressum" />
+        <footerSubtitle title="Contact Us" />
+        <footerSubtitle title="Speed Test" />
+        <footerSubtitle title="Legal Guarantee" />
+        <footerSubtitle title="Legal Notices" />
+        <footerSubtitle title="Only on Netflix" />
       </ul>
     </div>
     <div>
@@ -263,8 +263,8 @@
 
 <script setup>
 import header from "../components/page-2/Header.vue";
-import FooterSubtitle from "../components/page-2/FooterSubtitle.vue";
-import MovieCard from "../components/page-2/MovieCard.vue";
+import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
+import movieCard from "../components/page-2/MovieCard.vue";
 import image03 from "../assets/page-2-images/03.jpg";
 import image04 from "../assets/page-2-images/04.jpg";
 import image05 from "../assets/page-2-images/05.jpg";
