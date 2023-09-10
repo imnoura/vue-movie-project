@@ -20,9 +20,8 @@
     </ul>
   </div>
   <section class="mx-14 py-6 leading-5">
-    <div class="text-white text-3xl mt-6 mb-4">
-      <h2 class="leading-8">More Details</h2>
-    </div>
+    <SubTitle title="More Details" />
+
     <div class="text-white items-center">
       <div class="flex justify-between my-1">
         <div class="basis-[25%] leading-6">
@@ -90,9 +89,8 @@
     </div>
   </section>
   <section class="text-white text-base mx-14 mt-12 relative">
-    <div>
-      <h2 class="text-white text-3xl">More Like This</h2>
-    </div>
+    <SubTitle title="More Like This" />
+
     <div class="my-4 mx-0 flex w-full justify-center">
       <movieCard :image="image07" />
       <movieCard :image="image08" />
@@ -101,9 +99,7 @@
     </div>
   </section>
   <section class="mx-14 py-6 leading-5">
-    <div class="text-white text-3xl mt-6 mb-4">
-      <h2 class="leading-8">Coming Soon</h2>
-    </div>
+    <SubTitle title="Coming soon" />
     <div class="text-white items-center">
       <div class="flex justify-between my-1">
         <div class="basis-[25%] mr-12">
@@ -222,8 +218,9 @@ import Header from "../components/page-2/Header.vue";
 import movieBackground from "../components/page-2/MovieBackground.vue";
 import navbar from "../components/page-2/Navbar.vue";
 import navDescription from "../components/page-2/NavDescription.vue";
-import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import movieCard from "../components/page-2/MovieCard.vue";
+import subTitle from "../components/page-2/SubTitle.vue";
+import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import image03 from "../assets/page-2-images/03.jpg";
 import image04 from "../assets/page-2-images/04.jpg";
 import image05 from "../assets/page-2-images/05.jpg";
@@ -232,6 +229,7 @@ import image07 from "../assets/page-2-images/07.jpg";
 import image08 from "../assets/page-2-images/08.jpg";
 import image09 from "../assets/page-2-images/09.jpg";
 import image10 from "../assets/page-2-images/10.jpg";
+import SubTitle from "../components/page-2/SubTitle.vue";
 </script>
 
 <style scoped>
