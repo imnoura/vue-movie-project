@@ -20,19 +20,14 @@
     </ul>
   </div>
   <section class="mx-14 py-6 leading-5">
-    <SubTitle title="More Details" />
+    <subTitle title="More Details" />
 
     <div class="text-white items-center">
       <div class="flex justify-between my-1">
+        <PrimaryDescription title="Watch Offline" subtitle="Downloads only available on ad-free plans." />
         <div class="basis-[25%] leading-6">
-          <div class="text-gray-400 mb-1 leading-6">Watch offline</div>
-          <div>
-            <span>Downloads only available on ad-free plans.</span>
-          </div>
-        </div>
-        <div class="basis-[25%] leading-6">
-          <div class="text-gray-400 mb-1 leading-6">Genres</div>
-          <div>
+          <div class="mb-1 leading-6">Genres</div>
+          <div class="text-gray-400">
             <span class="link-items"> Family Movies, </span>
             <span class="link-items"> Kids & Family Movies, </span>
             <span class="link-items"> Family Adventure Movies, </span>
@@ -41,46 +36,33 @@
             <span class="link-items"> Animated Movies </span>
           </div>
         </div>
-        <div class="basis-[25%] leading-6">
-          <div class="text-gray-400 mb-1 leading-6">This movie is...</div>
-          <div>
-            <span>Heartfelt</span>
-          </div>
-        </div>
-        <div class="basis-[25%] leading-6">
-          <div class="text-gray-400 mb-1 leading-6">Audio</div>
-          <div>
-            <span
-              >German - Audio Description, German, English - Audio Description, English [Original], French - Audio Description,
-              French, Dutch, Turkish, Ukrainian
-            </span>
-          </div>
-        </div>
+        <PrimaryDescription title="This movie is..." subtitle="Heartfelt" />
+        <PrimaryDescription
+          title="Audio"
+          subtitle="German - Audio Description, German, English - Audio Description, English [Original], French - Audio Description, French, Dutch, Turkish, Ukrainian"
+        />
       </div>
       <div class="flex justify-between mt-8">
-        <div class="basis-[25%]">
-          <div class="text-gray-400 mb-1 leading-6">Subtitles</div>
-          <div class="basis-[25%] leading-6">German, German, English, French, French, Russian, Turkish, Ukrainian</div>
-        </div>
+        <PrimaryDescription title="Subtitles" subtitle="German, German, English, French, French, Russian, Turkish, Ukrainian" />
       </div>
       <div class="mt-4">
-        <div class="text-gray-400 mb-1 leading-6">Cast</div>
+        <div class="mb-1 leading-6">Cast</div>
         <div class="flex justify-between">
-          <div class="basis-[25%] leading-6">
+          <div class="basis-[25%] leading-6 text-gray-400">
             Chloë Grace Moretz <br />
             Lorraine Toussaint <br />
             Julio Torres
           </div>
-          <div class="basis-[25%] leading-6">
+          <div class="basis-[25%] leading-6 text-gray-400">
             Riz Ahmed <br />
             Beck Bennett <br />
             Sarah Sherman
           </div>
-          <div class="basis-[25%] leading-6">
+          <div class="basis-[25%] leading-6 text-gray-400">
             Eugene Lee Yang <br />
             Indya Moore
           </div>
-          <div class="basis-[25%] leading-6">
+          <div class="basis-[25%] leading-6 text-gray-400">
             Frances Conroy <br />
             RuPaul Charles
           </div>
@@ -89,7 +71,7 @@
     </div>
   </section>
   <section class="text-white text-base mx-14 mt-12 relative">
-    <SubTitle title="More Like This" />
+    <subTitle title="More Like This" />
 
     <div class="my-4 mx-0 flex w-full justify-center">
       <movieCard :image="image07" />
@@ -99,69 +81,53 @@
     </div>
   </section>
   <section class="mx-14 py-6 leading-5">
-    <SubTitle title="Coming soon" />
+    <subTitle title="Coming soon" />
     <div class="text-white items-center">
       <div class="flex justify-between my-1">
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">Sonic Prime</div>
-          <div class="text-gray-400 text-sm">
-            When an explosive battle with Dr. Eggman shatters the universe, Sonic races through parallel dimensions to reconnect
-            with his friends and save the world.
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">The Witcher</div>
-          <div class="text-gray-400 text-sm">
-            Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people
-            often prove more wicked than beasts.
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">The Lincoln Lawyer</div>
-          <div class="text-gray-400 text-sm">
-            Sidelined after an accident, hotshot Los Angeles lawyer Mickey Haller restarts his career — and his trademark Lincoln
-            — when he takes on a murder case.
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">Nineteen to Twenty</div>
-          <div class="text-gray-400 text-sm">
-            A group of young adults share their last week of teens and first week of twenties together — experiencing freedom and
-            all the “firsts” of adulthood.
-          </div>
-        </div>
+        <PrimaryDescription
+          title="Sonic Prime"
+          subtitle="When an explosive battle with Dr. Eggman shatters the universe, Sonic races through parallel dimensions to reconnect
+            with his friends and save the world."
+        />
+        <PrimaryDescription
+          title="The Witcher"
+          subtitle="Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people
+            often prove more wicked than beasts."
+        />
+        <PrimaryDescription
+          title="The Lincoln Lawyer"
+          subtitle="Sidelined after an accident, hotshot Los Angeles lawyer Mickey Haller restarts his career — and his trademark Lincoln
+            — when he takes on a murder case."
+        />
+        <PrimaryDescription
+          title="Nineteen to Twenty"
+          subtitle="A group of young adults share their last week of teens and first week of twenties together — experiencing freedom and
+            all the “firsts” of adulthood."
+        />
       </div>
     </div>
     <div class="text-white items-center mt-3">
       <div class="flex justify-between my-1">
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">Bird Box Barcelona</div>
-          <div class="text-gray-400 text-sm">
-            As a mysterious force decimates humanity, a sinister new threat grows in this Barcelona-set film that expands the
-            story of the blockbuster "Bird Box."
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">Survival of the Thickest</div>
-          <div class="text-gray-400 text-sm">
-            After a bad breakup, passionate stylist Mavis Beaumont seizes the opportunity to start over in life and love while
-            finding happiness on her own terms.
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">Record of Ragnarok</div>
-          <div class="text-gray-400 text-sm">
-            Before eradicating humankind from the world, the gods give them one last chance to prove themselves worthy of
-            survival. Let the Ragnarok battles begin!
-          </div>
-        </div>
-        <div class="basis-[25%] mr-12">
-          <div class="link-items text-white mb-1">War Sailor</div>
-          <div class="text-gray-400 text-sm">
-            When WWII erupts, two sailors on a Norwegian merchant ship face brutal conditions as they fight to survive a conflict
-            they were never asked to join.
-          </div>
-        </div>
+        <PrimaryDescription
+          title="Bird Box Barcelona"
+          subtitle="As a mysterious force decimates humanity, a sinister new threat grows in this Barcelona-set film that expands the
+            story of the blockbuster."
+        />
+        <PrimaryDescription
+          title="Survival of the Thickest"
+          subtitle="After a bad breakup, passionate stylist Mavis Beaumont seizes the opportunity to start over in life and love while
+            finding happiness on her own terms."
+        />
+        <PrimaryDescription
+          title="Record of Ragnarok"
+          subtitle="Before eradicating humankind from the world, the gods give them one last chance to prove themselves worthy of
+            survival. Let the Ragnarok battles begin!"
+        />
+        <PrimaryDescription
+          title="War Sailor"
+          subtitle="When WWII erupts, two sailors on a Norwegian merchant ship face brutal conditions as they fight to survive a conflict
+            they were never asked to join."
+        />
       </div>
     </div>
   </section>
@@ -219,6 +185,7 @@ import navbar from "../components/page-2/Navbar.vue";
 import navDescription from "../components/page-2/NavDescription.vue";
 import movieCard from "../components/page-2/MovieCard.vue";
 import subTitle from "../components/page-2/SubTitle.vue";
+import PrimaryDescription from "../components/page-2/PrimaryDescription.vue";
 import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import image03 from "../assets/page-2-images/03.jpg";
 import image04 from "../assets/page-2-images/04.jpg";
@@ -228,7 +195,6 @@ import image07 from "../assets/page-2-images/07.jpg";
 import image08 from "../assets/page-2-images/08.jpg";
 import image09 from "../assets/page-2-images/09.jpg";
 import image10 from "../assets/page-2-images/10.jpg";
-import SubTitle from "../components/page-2/SubTitle.vue";
 </script>
 
 <style scoped>
