@@ -58,23 +58,23 @@
 </template>
 
 <script setup>
-import movieCategory from "../components/movieCategory.vue";
-import movieCard from "../components/movieCard.vue";
-import image01 from "../assets/images/01.jpg";
-import image02 from "../assets/images/02.jpg";
-import image03 from "../assets/images/03.jpg";
-import image04 from "../assets/images/04.jpg";
-import image05 from "../assets/images/05.jpg";
-import image06 from "../assets/images/06.jpg";
-import image07 from "../assets/images/07.jpg";
-import image08 from "../assets/images/08.jpg";
-import image09 from "../assets/images/09.jpg";
-import image10 from "../assets/images/10.jpg";
-import image11 from "../assets/images/11.jpg";
-import image12 from "../assets/images/12.jpg";
-import SectionWrapper from "../components/SectionWrapper.vue";
-import Header from "../components/Header.vue";
-import Sidebar from "../components/Sidebar.vue";
+import movieCategory from "../components/page-1/movieCategory.vue";
+import movieCard from "../components/page-1/movieCard.vue";
+import image01 from "../assets/page-1-images/01.jpg";
+import image02 from "../assets/page-1-images/02.jpg";
+import image03 from "../assets/page-1-images/03.jpg";
+import image04 from "../assets/page-1-images/04.jpg";
+import image05 from "../assets/page-1-images/05.jpg";
+import image06 from "../assets/page-1-images/06.jpg";
+import image07 from "../assets/page-1-images/07.jpg";
+import image08 from "../assets/page-1-images/08.jpg";
+import image09 from "../assets/page-1-images/09.jpg";
+import image10 from "../assets/page-1-images/10.jpg";
+import image11 from "../assets/page-1-images/11.jpg";
+import image12 from "../assets/page-1-images/12.jpg";
+import SectionWrapper from "../components/page-1/SectionWrapper.vue";
+import Header from "../components/page-1/Header.vue";
+import Sidebar from "../components/page-1/Sidebar.vue";
 </script>
 
 <style scoped>

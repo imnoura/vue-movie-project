@@ -16,8 +16,8 @@
 
 <script setup>
 import Button from "./Button.vue";
-import f2 from "../assets/images/f-2.jpg";
-import f1 from "../assets/images/f-1.jpg";
+import f1 from "../../assets/page-1-images/f-1.jpg";
+import f2 from "../../assets/page-1-images/f-2.jpg";
 
 defineProps({
   bgImage: String,

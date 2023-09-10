@@ -2,7 +2,7 @@
   <div class="w-full h-12 bg-white dark:bg-black flex justify-between items-center px-[50px] text-black">
     <div class="flex">
       <div class="grid items-center">
-        <img src="../assets/images/logo.png" class="w-[100px] h-[30px] cursor-pointer" />
+        <img src="../../assets/page-1-images/logo.png" class="w-[100px] h-[30px] cursor-pointer" />
       </div>
       <div class="flex flex-row items-center sm:block hidden">
         <ul class="flex list-none">
@@ -17,7 +17,7 @@
       <div class="flex justify-center items-center gap-4">
         <div>
           <img
-            src="../assets/images/profile.png"
+            src="../../assets/page-1-images/profile.png"
             class="w-[35px] h-[35px] rounded-xl transition-all duration-300 ease-in-out hover:scale-75 cursor-pointer sm:block hidden"
           />
         </div>
