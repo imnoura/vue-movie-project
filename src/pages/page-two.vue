@@ -273,9 +273,6 @@ import image07 from "../assets/page-2-images/07.jpg";
 import image08 from "../assets/page-2-images/08.jpg";
 import image09 from "../assets/page-2-images/09.jpg";
 import image10 from "../assets/page-2-images/10.jpg";
-import internetLogo from "../assets/page-2-images/internet-logo.png";
-import logo from "../assets/page-2-images/logo.png";
-import propLogo from "../assets/page-2-images/prop-logo.png";
 </script>
 
 <style scoped>
