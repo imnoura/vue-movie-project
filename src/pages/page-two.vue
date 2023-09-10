@@ -1,7 +1,7 @@
 <template>
   <header class="w-full h-6 bg-black fixed z-30 flex justify-between items-center p-8 text-white top-0">
     <div class="grid items-center">
-      <img src="../src/assets/images-2/logo.png" class="w-28 h-10 cursor-pointer" />
+      <img src="../assets/page-2-images/logo.png" class="w-28 h-10 cursor-pointer" />
     </div>
     <div class="flex items-center justify-end text-sm">
       <div class="mr-2 text-white">
@@ -18,7 +18,7 @@
   <div class="mx-14 mt-10">
     <section class="image-wrapper">
       <div class="left-side-wrapper">
-        <img src="../src/assets/images-2/02.png" alt="Nimona" class="w-96" />
+        <img src="../assets/page-2-images/02.png" alt="Nimona" class="w-96" />
         <div class="pt-16">
           <h1 class="text-2xl my-2">Nimona</h1>
           <div class="text-gray-400 text-sm mt-4">
@@ -47,7 +47,7 @@
   <section>
     <div class="gradient-bg">
       <div class="flex items-center">
-        <img src="./assets/images-2/prop-logo.png" alt="prop-logo-netflix" class="h-10" />
+        <img src="../assets/page-2-images/prop-logo.png" alt="prop-logo-netflix" class="h-10" />
         <div class="text-base text-white font-semibold ml-1">Watch all you want.</div>
       </div>
       <button
@@ -72,22 +72,10 @@
   </section>
   <div class="text-white text-base mx-14 relative">
     <ul class="my-4 mx-0 flex justify-center">
-      <li class="horizontal-item-container">
-        <img src="./assets/images-2/03.jpg" alt="Trailer: Nimona" />
-        <span>Trailer: Nimona</span>
-      </li>
-      <li class="horizontal-item-container">
-        <img src="./assets/images-2/04.jpg" alt="Teaser 2: Nimona" />
-        <span>Teaser 2: Nimona</span>
-      </li>
-      <li class="horizontal-item-container">
-        <img src="./assets/images-2/05.jpg" alt="Teaser: Nimona" />
-        <span>Teaser: Nimona</span>
-      </li>
-      <li class="horizontal-item-container">
-        <img src="./assets/images-2/06.jpg" alt="Trailer 3: Nimona" />
-        <span>Trailer 3: Nimona</span>
-      </li>
+      <MovieCard :image="image03" />
+      <MovieCard :image="image04" />
+      <MovieCard :image="image05" />
+      <MovieCard :image="image06" />
     </ul>
   </div>
   <section class="mx-14 py-6 leading-5">
@@ -165,10 +153,10 @@
       <h2 class="text-white text-3xl">More Like This</h2>
     </div>
     <div class="my-4 mx-0 flex w-full justify-center">
-      <img src="./assets/images-2/07.jpg" alt="" class="movies-like-this" />
-      <img src="./assets/images-2/08.jpg" alt="" class="movies-like-this" />
-      <img src="./assets/images-2/09.jpg" alt="" class="movies-like-this" />
-      <img src="./assets/images-2/10.jpg" alt="" class="movies-like-this" />
+      <MovieCard :image="image07" />
+      <MovieCard :image="image08" />
+      <MovieCard :image="image09" />
+      <MovieCard :image="image10" />
     </div>
   </section>
   <section class="mx-14 py-6 leading-5">
@@ -252,25 +240,25 @@
       <p class="link-items mb-8">Questions? Contact us.</p>
       <ul class="text-[13px]">
         <li class="link-items footer-items">FAQ</li>
-        <li class="link-items footer-items">Cancel Membership</li>
-        <li class="link-items footer-items">Help Center</li>
-        <li class="link-items footer-items">Account</li>
-        <li class="link-items footer-items">Media Center</li>
-        <li class="link-items footer-items">Investor Relations</li>
-        <li class="link-items footer-items">Jobs</li>
-        <li class="link-items footer-items">Netflix Shop</li>
-        <li class="link-items footer-items">Redeem Gift Cards</li>
-        <li class="link-items footer-items">Buy Gift Cards</li>
-        <li class="link-items footer-items">Ways to Watch</li>
-        <li class="link-items footer-items">Terms of Use</li>
-        <li class="link-items footer-items">Privacy</li>
-        <li class="link-items footer-items">Cookie Preferences</li>
-        <li class="link-items footer-items">Impressum</li>
-        <li class="link-items footer-items">Contact Us</li>
-        <li class="link-items footer-items">Speed Test</li>
-        <li class="link-items footer-items">Legal Guarantee</li>
-        <li class="link-items footer-items">Legal Notices</li>
-        <li class="link-items footer-items">Only on Netflix</li>
+        <FooterSubtitle title="Cancel Membership" />
+        <FooterSubtitle title="Help Center" />
+        <FooterSubtitle title="Account" />
+        <FooterSubtitle title="Media Center" />
+        <FooterSubtitle title="Investor Relations" />
+        <FooterSubtitle title="Jobs" />
+        <FooterSubtitle title="Netflix Shop" />
+        <FooterSubtitle title="Redeem Gift Cards" />
+        <FooterSubtitle title="Buy Gift Cards" />
+        <FooterSubtitle title="Ways to Watch" />
+        <FooterSubtitle title="Terms of Use" />
+        <FooterSubtitle title="Privacy" />
+        <FooterSubtitle title="Cookie Preferences" />
+        <FooterSubtitle title="Impressum" />
+        <FooterSubtitle title="Contact Us" />
+        <FooterSubtitle title="Speed Test" />
+        <FooterSubtitle title="Legal Guarantee" />
+        <FooterSubtitle title="Legal Notices" />
+        <FooterSubtitle title="Only on Netflix" />
       </ul>
     </div>
     <div>
@@ -288,6 +276,102 @@
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+import FooterSubtitle from "../components/page-2/FooterSubtitle.vue";
+import MovieCard from "../components/page-2/MovieCard.vue";
+import image03 from "../assets/page-2-images/03.jpg";
+import image04 from "../assets/page-2-images/04.jpg";
+import image05 from "../assets/page-2-images/05.jpg";
+import image06 from "../assets/page-2-images/06.jpg";
+import image07 from "../assets/page-2-images/07.jpg";
+import image08 from "../assets/page-2-images/08.jpg";
+import image09 from "../assets/page-2-images/09.jpg";
+import image10 from "../assets/page-2-images/10.jpg";
+import internetLogo from "../assets/page-2-images/internet-logo.png";
+import logo from "../assets/page-2-images/logo.png";
+import propLogo from "../assets/page-2-images/prop-logo.png";
+</script>
 
-<style scoped></style>
+<style scoped>
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.left-side-wrapper {
+  @apply text-white flex flex-col items-start h-full justify-center;
+  background: linear-gradient(
+    90deg,
+    #181818 10%,
+    hsla(0, 0%, 9%, 0.98) 20%,
+    hsla(0, 0%, 9%, 0.97) 25%,
+    hsla(0, 0%, 9%, 0.95) 35%,
+    hsla(0, 0%, 9%, 0.94) 40%,
+    hsla(0, 0%, 9%, 0.92) 45%,
+    hsla(0, 0%, 9%, 0.9) 50%,
+    hsla(0, 0%, 9%, 0.87) 55%,
+    hsla(0, 0%, 9%, 0.82) 60%,
+    hsla(0, 0%, 9%, 0.75) 65%,
+    hsla(0, 0%, 9%, 0.63) 70%,
+    hsla(0, 0%, 9%, 0.45) 75%,
+    hsla(0, 0%, 9%, 0.27) 80%,
+    hsla(0, 0%, 9%, 0.15) 85%,
+    hsla(0, 0%, 9%, 0.08) 90%,
+    hsla(0, 0%, 9%, 0.03) 95%,
+    hsla(0, 0%, 9%, 0)
+  );
+}
+
+.image-wrapper {
+  @apply h-screen flex items-center justify-start;
+  background: linear-gradient(
+      0deg,
+      #181818 0,
+      hsla(0, 0%, 9%, 0.987) 1.62%,
+      hsla(0, 0%, 9%, 0.951) 3.1%,
+      hsla(0, 0%, 9%, 0.896) 4.5%,
+      hsla(0, 0%, 9%, 0.825) 5.8%,
+      hsla(0, 0%, 9%, 0.741) 7.06%,
+      hsla(0, 0%, 9%, 0.648) 8.24%,
+      hsla(0, 0%, 9%, 0.55) 9.42%,
+      hsla(0, 0%, 9%, 0.45) 10.58%,
+      hsla(0, 0%, 9%, 0.352) 11.76%,
+      hsla(0, 0%, 9%, 0.259) 12.94%,
+      hsla(0, 0%, 9%, 0.175) 14.2%,
+      hsla(0, 0%, 9%, 0.104) 15.5%,
+      hsla(0, 0%, 9%, 0.049) 16.9%,
+      hsla(0, 0%, 9%, 0.013) 18.38%,
+      hsla(0, 0%, 9%, 0) 20%
+    ),
+    url(../assets/page-2-images/01.jpg);
+  background-size: cover;
+}
+
+.gradient-bg {
+  @apply mx-14 flex relative items-center py-2 px-6 mb-8 justify-between;
+  margin-top: -120px;
+  background-image: linear-gradient(90deg, #333 5%, #181818 95%);
+  box-shadow: 8px 5px 16px 0 rgba(0, 0, 0, 0.37);
+}
+
+.gradient-line {
+  background: linear-gradient(90deg, #777 0, rgba(51, 51, 51, 0.5) 50%, #777);
+  height: 1px;
+  margin-bottom: 25px;
+}
+
+.horizontal-item-container {
+  @apply mr-3;
+}
+
+.movies-like-this {
+  @apply w-[300px] h-[200px] flex-1 object-cover mr-3 cursor-pointer transition-all duration-300 ease-in-out hover:scale-90;
+}
+
+.link-items {
+  @apply hover:underline cursor-pointer;
+}
+
+.footer-items {
+  @apply box-border inline-block mb-4 min-w-[100px] align-top w-[25%];
+}
+</style>
