@@ -1,9 +1,6 @@
 <template>
   <div class="movie-list-item">
     <img class="movie-list-item-img" :src="image" />
-    <span class="movie-list-item-title">Netflix Original</span>
-    <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
-    <Button class="btn" :is-large="false" title="Watch Now" />
   </div>
 </template>
 
@@ -18,7 +15,7 @@ defineProps({
   @apply mr-[20px] relative;
 }
 .movie-list-item-img {
-  @apply sm:w-[300px] sm:h-[200px] object-cover rounded-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
+  @apply sm:w-[400px] sm:h-[250px] object-cover rounded-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-75;
 }
 .movie-list-item:hover .movie-list-item-img {
   transform: scale(0.9);
