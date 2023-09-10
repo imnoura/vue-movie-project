@@ -1,9 +1,9 @@
 <script setup>
-import PageOne from "./pages/page-one.vue";
+import PageTwo from "./pages/page-two.vue";
 </script>
 
 <template>
-  <PageOne />
+  <PageTwo />
 </template>
 
 <style scoped></style>
