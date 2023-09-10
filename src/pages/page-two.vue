@@ -3,19 +3,7 @@
   <div class="mx-14 mt-10">
     <movieBackground />
   </div>
-  <section>
-    <div class="gradient-bg">
-      <div class="flex items-center">
-        <img src="../assets/page-2-images/prop-logo.png" alt="prop-logo-netflix" class="h-10" />
-        <div class="text-base text-white font-semibold ml-1">Watch all you want.</div>
-      </div>
-      <button
-        class="bg-[#f40612] text-white justify-end rounded-sm px-6 py-1.5 text-[13px] border-none outline-none cursor-pointer"
-      >
-        JOIN NOW
-      </button>
-    </div>
-  </section>
+  <navbar />
   <section class="mb-7 mt-20 mx-14">
     <div class="gradient-line"></div>
     <div class="text-gray-400 text-base my-6 text-center">
@@ -238,6 +226,7 @@
 <script setup>
 import Header from "../components/page-2/Header.vue";
 import movieBackground from "../components/page-2/MovieBackground.vue";
+import navbar from "../components/page-2/Navbar.vue";
 import footerSubtitle from "../components/page-2/FooterSubtitle.vue";
 import movieCard from "../components/page-2/MovieCard.vue";
 import image03 from "../assets/page-2-images/03.jpg";
@@ -254,13 +243,6 @@ import image10 from "../assets/page-2-images/10.jpg";
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-.gradient-bg {
-  @apply mx-14 flex relative items-center py-2 px-6 mb-8 justify-between;
-  margin-top: -120px;
-  background-image: linear-gradient(90deg, #333 5%, #181818 95%);
-  box-shadow: 8px 5px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 .gradient-line {
