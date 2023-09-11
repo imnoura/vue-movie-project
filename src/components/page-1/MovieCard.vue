@@ -2,13 +2,16 @@
   <div class="movie-list-item">
     <img class="movie-list-item-img" :src="image" />
     <span class="movie-list-item-title">Netflix Original</span>
-    <p class="movie-list-item-desc">Ready to watch? Enter your email to create or restart your membership.</p>
+    <p class="movie-list-item-desc">
+      <router-link to="/2">Ready to watch? Enter your email to create or restart your membership.</router-link>
+    </p>
     <Button class="btn" :is-large="false" title="Watch Now" />
   </div>
 </template>
 
 <script setup>
 import Button from "./Button.vue";
+import { RouterLink } from "vue-router";
 
 defineProps({
   image: String,
