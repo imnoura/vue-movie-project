@@ -39,8 +39,20 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+let theme = ref(localStorage.getItem("theme"));
+
 function changeTheme() {
   document.body.classList.toggle("dark");
+
+  if (theme.value == "light") {
+    theme.value = "dark";
+  } else {
+    theme.value = "light";
+  }
+
+  localStorage.setItem("theme", theme.value);
 }
 </script>
 

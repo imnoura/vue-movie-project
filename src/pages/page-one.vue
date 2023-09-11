@@ -75,6 +75,20 @@ import image12 from "../assets/page-1-images/12.jpg";
 import SectionWrapper from "../components/page-1/SectionWrapper.vue";
 import Header from "../components/page-1/Header.vue";
 import Sidebar from "../components/page-1/Sidebar.vue";
+
+function checkTheme() {
+  const item = localStorage.getItem("theme");
+  if (item) {
+    if (item == "dark") {
+      document.body.className = "dark";
+    }
+  } else {
+    localStorage.setItem("theme", "dark");
+    document.body.className = "dark";
+  }
+}
+
+checkTheme();
 </script>
 
 <style scoped>
