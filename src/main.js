@@ -8,11 +8,11 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
+    path: "/homePage",
     component: page1,
   },
   {
-    path: "/2",
+    path: "/moviePage",
     component: page2,
   },
 ];
